@@ -24,7 +24,7 @@ def binary_search_iter(_list, n):
 def binary_search_recur(_list, n, first=0, last=None):
     if last is None:
         last = len(_list) - 1
-    if last <= first:
+    if last < first:
         return False
     mid = (first + last) // 2
     if _list[mid] == n:
